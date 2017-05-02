@@ -1,3 +1,1 @@
-<h1>
-  {{title}}
-</h1>
+<p-autoComplete [(ngModel)]="value" [dropdown]="true" [suggestions]="results" (completeMethod)="search($event)" (onDropdownClick)="handleDropdown($event)" field="title"></p-autoComplete>
